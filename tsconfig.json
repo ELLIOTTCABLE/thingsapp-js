@@ -1,0 +1,17 @@
+{
+   "$schema": "https://json.schemastore.org/tsconfig",
+
+   "compilerOptions": {
+      "strict": true,
+      "target": "es2019",
+      "module": "Node16",
+
+      "declaration": true,
+      "declarationMap": true,
+      "inlineSourceMap": true,
+
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true
+   }
+}

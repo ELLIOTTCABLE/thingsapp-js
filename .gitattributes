@@ -1,0 +1,3 @@
+package.json        merge=npm-merge-driver
+package-lock.json   merge=npm-merge-driver -diff linguist-generated=true
+npm-shrinkwrap.json merge=npm-merge-driver -diff linguist-generated=true

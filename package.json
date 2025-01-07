@@ -1,0 +1,30 @@
+{
+   "name": "thingsapp-js",
+   "version": "0.0.1",
+   "homepage": "https://github.com/ELLIOTTCABLE/thingsapp-js",
+   "bugs": {
+      "url": "https://github.com/ELLIOTTCABLE/thingsapp-js/issues"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ELLIOTTCABLE/thingsapp-js.git"
+   },
+   "description": "An interface to the Cultured Code Things.app private APIs",
+   "type": "module",
+   "types": "dist/index.d.ts",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "author": "ELLIOTTCABLE <npm@ell.io>",
+   "devDependencies": {
+      "@types/jest": "^29.5.13",
+      "@types/node": "^22.7.5",
+      "@typescript-eslint/eslint-plugin": "^8.8.1",
+      "@typescript-eslint/parser": "^8.8.1",
+      "eslint": "^9.12.0",
+      "jest": "^29.7.0",
+      "ts-jest": "^29.2.5",
+      "ts-node": "^10.9.2",
+      "typescript": "^5.6.3"
+   }
+}
