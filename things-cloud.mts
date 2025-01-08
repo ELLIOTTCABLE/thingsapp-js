@@ -8,12 +8,12 @@ export type Client = {
 
 function headers() {
    const h = new Headers()
-   h.set("Host", "cloud.culturedcode.com")
-   h.set("User-Agent", "thingsapp-js/0.1")
-   h.set("Content-Type", "application/json; charset=UTF-8")
-   h.set("Accept", "application/json")
-   h.set("Accept-Charset", "UTF-8")
-   h.set("Accept-Language", "en-US,en;q=0.9")
+   h.set('Host', 'cloud.culturedcode.com')
+   h.set('User-Agent', 'thingsapp-js/0.1')
+   h.set('Content-Type', 'application/json; charset=UTF-8')
+   h.set('Accept', 'application/json')
+   h.set('Accept-Charset', 'UTF-8')
+   h.set('Accept-Language', 'en-US,en;q=0.9')
 }
 
 export async function auth({
@@ -25,7 +25,7 @@ export async function auth({
 }): Promise<Client> {
    const req = new Request(`https://cloud.culturedcode.com/version/1/account/${email}`, {
       headers: {
-         Authorization: "Password " + password,
+         Authorization: 'Password ' + password,
       },
    })
    let resp = await fetch(req)
@@ -34,9 +34,9 @@ export async function auth({
    }
 
    let data = await resp.json()
-   let history_key = data["history-key"]
+   let history_key = data['history-key']
 
-   return { email, password, history_key }
+   return {email, password, history_key}
 }
 
 export async function getHistory(client: Client, startIndex: number = 0) {
